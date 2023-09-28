@@ -1,5 +1,6 @@
 // get all the elements on the page
 const elements = document.querySelectorAll('*');
+console.log('cheese');
 
 //creating a function that will replace an element with a picture
 function replaceWithPicture(el){
