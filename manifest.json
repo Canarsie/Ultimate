@@ -2,10 +2,10 @@
   "manifest_version": 3,
   "name": "ultimate",
   "version": "1.0",
-  "permissions": ["contextMenus"],
-  "background": {
-    "service_worker": "src/file.js"
-  }
-  
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["src/file.js"]
+    }
+  ]
 }
-
