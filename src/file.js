@@ -1,10 +1,5 @@
-
-
-
 // get all the elements on the page
 const elements = document.querySelectorAll('*');
-
-
 
 // give every element an event listener that removes it on right click plus alt and shift key
 for (let i = 0; i < elements.length; i++) {
