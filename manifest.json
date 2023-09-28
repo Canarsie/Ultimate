@@ -3,12 +3,9 @@
   "name": "ultimate",
   "version": "1.0",
   "permissions": ["contextMenus"],
-  "content_scripts": [
-    {
-      "matches": ["https://*/*"],
-      "js": ["src/file.js"]
-    }
-  ]
+  "background": {
+    "service_worker": "src/file.js"
+  }
   
 }
 
