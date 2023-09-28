@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "ultimate",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["src/file.js"]
+    }
+  ]
+}
+
