@@ -8,7 +8,7 @@ const elements = document.querySelectorAll('*');
 // give every element an event listener that removes it on double-click
 for (let i = 0; i < elements.length; i++) {
   elements[i].addEventListener('click', (event) => {
-    // console.log(event);
-    event.target.remove();
+    console.log(event);
+    // event.target.remove();
   })
 }
