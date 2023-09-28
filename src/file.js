@@ -1,13 +1,14 @@
-// goal is to capture all elements in an array
-// iterate through that array, removing them from the DOM one by one
 
+
+
+// get all the elements on the page
 const elements = document.querySelectorAll('*');
-// will this get all the elements?
 
 
-// give every element an event listener that removes it on double-click
+
+// give every element an event listener that removes it on right click plus alt and shift key
 for (let i = 0; i < elements.length; i++) {
-  elements[i].addEventListener('click', (event) => {
+  elements[i].addEventListener('contextmenu', (event) => {
     // console.log(event);
     if (event.altKey === true && event.shiftKey === true) event.target.remove();
   })
